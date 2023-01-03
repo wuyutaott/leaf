@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"net"
 	"os"
@@ -21,11 +22,12 @@ func reader(conn net.Conn) {
 
 func writer(conn net.Conn) {
 	for {
-		var input string
-		fmt.Scanln(&input)
-		buf := []byte(input)
-		buf = append(buf, '\n')
-		conn.Write(buf)
+		reader := bufio.NewReader(os.Stdin)
+		str, err := reader.ReadString('\n')
+		if err != nil {
+			fmt.Println("read string err:", err)
+		}
+		conn.Write([]byte(str))
 	}
 }
 
