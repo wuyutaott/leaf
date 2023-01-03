@@ -13,6 +13,7 @@ func main() {
 	leafconf.LogPath = xxx_conf.Server.LogPath
 	leafconf.LogFlag = xxx_conf.LogFlag
 	leafconf.ConsolePort = xxx_conf.Server.ConsolePort
+	leafconf.ConsolePrompt = xxx_conf.Server.ConsolePrompt
 	leafconf.ProfilePath = xxx_conf.Server.ProfilePath
 
 	leaf.Run(

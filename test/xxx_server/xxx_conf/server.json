@@ -6,5 +6,7 @@
   "MaxConnNum": 20000,
   "MgodbAddr": "mongodb://127.0.0.1:27017",
   "LoginMgoConnNum": 20,
-  "GameMgoConnNum":100
+  "GameMgoConnNum":100,
+  "ConsolePort": 3564,
+  "ConsolePrompt": "it's console prompt"
 }

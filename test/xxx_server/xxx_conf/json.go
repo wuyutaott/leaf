@@ -19,6 +19,7 @@ var Server struct {
 	MgodbAddr       string
 	LoginMgoConnNum int
 	GameMgoConnNum  int
+	ConsolePrompt   string
 }
 
 func init() {
