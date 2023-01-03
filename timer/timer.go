@@ -1,8 +1,8 @@
 package timer
 
 import (
-	"github.com/name5566/leaf/conf"
-	"github.com/name5566/leaf/log"
+	"github.com/wuyutaott/leaf/conf"
+	"github.com/wuyutaott/leaf/log"
 	"runtime"
 	"time"
 )
