@@ -1,6 +1,6 @@
 package network
 
-type Processor interface {
+type IProcessor interface {
 	// must goroutine safe
 	Route(msg interface{}, userData interface{}) error
 	// must goroutine safe

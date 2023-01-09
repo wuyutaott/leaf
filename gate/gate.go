@@ -13,7 +13,7 @@ type Gate struct {
 	MaxConnNum      int
 	PendingWriteNum int
 	MaxMsgLen       uint32
-	Processor       network.Processor
+	Processor       network.IProcessor
 	AgentChanRPC    *chanrpc.Server
 
 	// websocket
