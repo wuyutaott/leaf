@@ -1,6 +1,6 @@
 package network
 
-type Agent interface {
+type IAgent interface {
 	Run()
 	OnClose()
 }

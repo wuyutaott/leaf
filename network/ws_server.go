@@ -18,7 +18,7 @@ type WSServer struct {
 	HTTPTimeout     time.Duration
 	CertFile        string
 	KeyFile         string
-	NewAgent        func(*WSConn) Agent
+	NewAgent        func(*WSConn) IAgent
 	ln              net.Listener
 	handler         *WSHandler
 }
@@ -27,7 +27,7 @@ type WSHandler struct {
 	maxConnNum      int
 	pendingWriteNum int
 	maxMsgLen       uint32
-	newAgent        func(*WSConn) Agent
+	newAgent        func(*WSConn) IAgent
 	upgrader        websocket.Upgrader
 	conns           WebsocketConnSet
 	mutexConns      sync.Mutex

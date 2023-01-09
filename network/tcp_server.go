@@ -11,7 +11,7 @@ type TCPServer struct {
 	Addr            string
 	MaxConnNum      int
 	PendingWriteNum int
-	NewAgent        func(*TCPConn) Agent
+	NewAgent        func(*TCPConn) IAgent
 	ln              net.Listener
 	conns           ConnSet
 	mutexConns      sync.Mutex

@@ -36,7 +36,7 @@ type Agent struct {
 	reader *bufio.Reader
 }
 
-func newAgent(conn *network.TCPConn) network.Agent {
+func newAgent(conn *network.TCPConn) network.IAgent {
 	a := new(Agent)
 	a.conn = conn
 	a.reader = bufio.NewReader(conn)

@@ -54,7 +54,7 @@ type Agent struct {
 	conn *network.TCPConn
 }
 
-func newAgent(conn *network.TCPConn) network.Agent {
+func newAgent(conn *network.TCPConn) network.IAgent {
 	a := new(Agent)
 	a.conn = conn
 	return a

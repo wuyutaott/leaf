@@ -14,7 +14,7 @@ type TCPClient struct {
 	ConnectInterval time.Duration
 	PendingWriteNum int
 	AutoReconnect   bool
-	NewAgent        func(*TCPConn) Agent
+	NewAgent        func(*TCPConn) IAgent
 	conns           ConnSet
 	wg              sync.WaitGroup
 	closeFlag       bool

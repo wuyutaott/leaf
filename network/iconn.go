@@ -4,7 +4,7 @@ import (
 	"net"
 )
 
-type Conn interface {
+type IConn interface {
 	ReadMsg() ([]byte, error)
 	WriteMsg(args ...[]byte) error
 	LocalAddr() net.Addr
